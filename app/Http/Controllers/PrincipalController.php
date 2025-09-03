@@ -6,9 +6,12 @@ use Illuminate\Http\Request;
 
 class PrincipalController extends Controller
 {
-    public function bakery()
-    {
-        
+    public function bakery(){
         return view('bakery');
     }
+
+    public function sobreNos(){
+        return view('sobre-nos');
+    }
+    
 }
