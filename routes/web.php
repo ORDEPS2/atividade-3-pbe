@@ -9,5 +9,8 @@ Route::get('/', function () {
 
 Route::get('/bakery', [PrincipalController::class, 'bakery']);
 
-Route::get('/sobre-nos', [PrincipalController::class, 'sobre-nos']);
+Route::get('/sobre', [PrincipalController::class, 'sobre']);
 
+Route::get('/contato', [PrincipalController::class, 'contato']);
+
+Route::post('/contato', [PrincipalController::class, 'enviarContato']);
